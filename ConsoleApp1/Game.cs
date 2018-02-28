@@ -32,7 +32,8 @@ namespace ConsoleApp1
             {
             MainMenu();
             }
-           
+            Console.WriteLine("In 7 days you earned...");
+            player.wallet.thisWeeksEarnings();
         }
         public void DisplayWelcome()
         {

@@ -36,9 +36,9 @@ namespace ConsoleApp1
         public void thisWeeksEarnings()
         {
             double earnings;
-            double startingFunds = 10;
+            double startingFunds = 20;
             earnings = moneyInWallet - startingFunds;
-            Console.WriteLine("You made {0} this week!!!", earnings);
+            Console.WriteLine(earnings);
         }
     }
 }
