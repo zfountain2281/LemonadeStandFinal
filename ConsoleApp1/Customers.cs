@@ -11,6 +11,7 @@ namespace ConsoleApp1
         Random random;
         double percent= 100;
         public int numberOfCupsToBuy;
+        double initialChanceToBuy;
         double chanceToBuy;
         double temperatureProbability;
         double conditionProbability;
@@ -22,7 +23,8 @@ namespace ConsoleApp1
         {
             willPayMax = WillPayMax;
             numberOfCupsToBuy = NumberOfCupsToBuy;
-            
+            random = new Random();
+            initialChanceToBuy = random.Next(40, 61);
         }
         public void ChanceToBuyTemperature(Weather weather)
         {
@@ -76,15 +78,16 @@ namespace ConsoleApp1
             actualChanceToBuy.Add(temperatureProbability);
             actualChanceToBuy.Add(conditionProbability);
             actualChanceToBuy.Add(costProbability);
-            double chanceTobuy = actualChanceToBuy.Average();//round
+            actualChanceToBuy.Add(initialChanceToBuy);
+            double chanceTobuy = actualChanceToBuy.Average();
             this.chanceToBuy = chanceTobuy;
             return this.chanceToBuy;
         }
 
         public bool CustomerBuysLemonade(int randomValue)
         {
-            int value = 100;
-            if (chanceToBuy <= value)
+            // use randomValue instead of value
+            if (chanceToBuy <= randomValue)
             {
                 buy = false;
             }

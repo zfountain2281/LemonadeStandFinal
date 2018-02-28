@@ -26,6 +26,7 @@ namespace ConsoleApp1
         {
             weather = new Weather(random);
             this.random = random;
+            weather.CreateTodaysWeather();
         }
         public double PriceOfCup()
         {

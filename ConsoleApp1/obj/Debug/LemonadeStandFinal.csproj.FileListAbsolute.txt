@@ -5,3 +5,10 @@ c:\users\ztrai\source\repos\LemonadeStandFinal\ConsoleApp1\bin\Debug\ConsoleApp1
 c:\users\ztrai\source\repos\LemonadeStandFinal\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
 c:\users\ztrai\source\repos\LemonadeStandFinal\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 c:\users\ztrai\source\repos\LemonadeStandFinal\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\obj\Debug\LemonadeStandFinal.csprojResolveAssemblyReference.cache
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\obj\Debug\LemonadeStandFinal.csproj.CoreCompileInputs.cache
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\ztrai\OneDrive\Desktop\Dev\LemonadeStand\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

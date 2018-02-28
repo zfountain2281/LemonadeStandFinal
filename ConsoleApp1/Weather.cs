@@ -19,6 +19,8 @@ namespace ConsoleApp1
         public Weather(Random random)
         {
             this.random = random;
+            ForecastTemperature();
+            ForecastCondition();
         }
         public void DailyTemperature()
         {
@@ -59,8 +61,7 @@ namespace ConsoleApp1
             List<string> weatherForcase = new List<string> { "Tomorrow's", "The next day's", "And the day after that's" };
             foreach (string day in weatherForcase)
             {
-                ForecastTemperature();
-                ForecastCondition();
+
                 Console.WriteLine(day + " forecast is: {0} {1}  \n\n", forecastTemperature, forecastCondition);
             }
         }

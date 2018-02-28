@@ -28,7 +28,11 @@ namespace ConsoleApp1
             day.CreateCustomers();
             RandomNumber();
             DisplayWelcome();
-            day.SellLemonade(player);
+            for(int d = 1; d <= 7; d++)
+            {
+            MainMenu();
+            }
+           
         }
         public void DisplayWelcome()
         {
@@ -39,7 +43,6 @@ namespace ConsoleApp1
             Console.ReadLine();
             Console.Clear();
             MakeWeather();
-            MainMenu();
         }
         public void MakeWeather()
         {
@@ -47,6 +50,7 @@ namespace ConsoleApp1
         }
         public void MainMenu()
         {
+            
             Console.WriteLine("Please type in the number of the menu item you would like to select.\n\n");
             Console.WriteLine("1: Rules\n\n2: Weather\n\n3: Check Wallet\n\n4: Run to the store\n\n5: Check inventory\n\n6: Check recipe and make Lemonade.\n\n7: Set price and play game");
             string value = Console.ReadLine();
@@ -113,20 +117,17 @@ namespace ConsoleApp1
                 case "7":
                     Console.Clear();
                     day.PriceOfCup();
-                    for (int d = 1; d <= 7; d++)
-                    {
-
+                        day.CreateCustomers();
                         for (int i = 0; i < day.stopSelling; i++)
                         {
+                            randomValue = RandomNumber();
                             day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
                         }
                         day.SellLemonade(player);
-                        MainMenu();
-                    }
-                    player.wallet.thisWeeksEarnings();
-                    Console.ReadLine();
-                    RestartGame();
-                    Console.Clear();
+                        day = new Day(random);
+                       
+                    // }
+
                     break;
                 default:
                     Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
@@ -168,7 +169,7 @@ namespace ConsoleApp1
         }
         public int RandomNumber()
         {
-            return randomValue = random.Next(1, 100);
+            return randomValue = random.Next(1, 150);
         }
     }
 }
